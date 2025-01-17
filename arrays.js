@@ -118,5 +118,3 @@ console.log(currMovies);
 
 
 
-// flat() - Flatten Nested Arrays
-const numArray = [1,2,3,4,5,6,7,8,9]
