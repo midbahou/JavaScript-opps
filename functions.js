@@ -114,14 +114,15 @@ console.log(areaResults);
 
 
 
-let planetHasWater = function(planet){
-    if (!(planet == "Earth" || planet == "Mars")) {
-        return !(planet.toLowerCase == "Earth" || planet.toLowerCase == "Mars")
+const planetHasWater = function(planet){
+    if (planet.toLowerCase() == "Earth" || planet.toLowerCase() == "Mars") {
+        return (console.log(`This Planet: ${planet} has WATER!`));
     } else {
         return ("Not defined")
     }
 }
-console.log(planetHasWater("earsth"))
+const isHasWater = planetHasWater("Mars");
+console.log(isHasWater)
 
 
 
@@ -133,9 +134,11 @@ function getDevObject(name){
     console.log(arguments);
 }
 
-let maria = getDevObject("Maria", "HTML", "JS")
+let maria = getDevObject("Maria", "HTML", "JS");
+console.log(maria);
 
-// f(x) name of f(x) parametres
+
+//f(x) / name of f(x) / parametres
 function getDevObject(name){
     const skills = [];
     
@@ -207,6 +210,13 @@ myForEach(colors, (element) => {
 
 myForEach(colors, function(elem){
     console.log(elem.toUpperCase());
+});
+
+
+const skills = ["html", "css", "nodejs"];
+
+myForEach(skills, (elementss) => {
+    console.log(elementss.toUpperCase());
 });
 
 
