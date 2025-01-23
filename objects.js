@@ -66,7 +66,7 @@ myCar.engine = {
     cylinders: 6
 }
 console.log(myCar);
-console.log(myCar.engine.cylinders); // console.log(myCar[engine][cylinders])
+console.log(myCar.engine.cylinders); // console.log(myCar["engine"]["cylinders"])
 
 
 // makes a copy of an object using the spread operator
@@ -77,4 +77,15 @@ console.log(myUserCar == myCar); // false
 console.log(myUserCar.engine == myCar.engine); // true
 
 
+console.log(myCar);
+
+if (myCar.color) { // true: the property exist and it's true
+    console.log(`the color is ${myCar.color}`);
+}
+
+if (myCar.price) { // false: besause we don't have the price property
+    console.log("Price is");
+} else {
+    console.log("not for sale!");
+}
 
