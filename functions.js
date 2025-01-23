@@ -115,13 +115,13 @@ console.log(areaResults);
 
 
 const planetHasWater = function(planet){
-    if (planet.toLowerCase() == "Earth" || planet.toLowerCase() == "Mars") {
-        return (console.log(`This Planet: ${planet} has WATER!`));
+    if (planet.toLowerCase() === "earth" || planet.toLowerCase() === "mars") {
+        return `This Planet: ${planet} has WATER!`;
     } else {
-        return ("Not defined")
+        return `This planet: ${planet} does not have WATER!`
     }
 }
-const isHasWater = planetHasWater("Mars");
+const isHasWater = planetHasWater("Earth");
 console.log(isHasWater)
 
 
